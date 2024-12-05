@@ -10,7 +10,7 @@ class Locators:
     ENTER_FORM_HEADER = (By.XPATH, ".//h2[text()='Вход']")
     # Поле ввода емейла формы Ввод
     EMAIL_INPUT_FIELD_ENTER = (By.XPATH, "*//input[@name = 'name']")
-    # Поле ввода пароля формы Ввод
+    # Поле ввода пароля форм Ввод и Регистрация
     PASSWORD_INPUT_FIELD = (By.XPATH, ".//input[@name='Пароль']")
 
     # Кнопка регистрации
