@@ -26,7 +26,7 @@ class TestRegistration:
         driver.find_element(*Locators.EMAIL_INPUT_FIELD_REG).send_keys(email_generator)
 
         # поле ввода пароля
-        driver.find_element(*Locators.PASSWORD_INPUT_FIELD_REG).send_keys(password_generator)
+        driver.find_element(*Locators.PASSWORD_INPUT_FIELD).send_keys(password_generator)
 
         # кнопка зарегистрироваться
         driver.find_element(*Locators.REGISTRATION_BUTTON).click()
@@ -39,7 +39,7 @@ class TestRegistration:
         driver.find_element(*Locators.EMAIL_INPUT_FIELD_ENTER).send_keys(email_generator)
 
         # поле ввода пароля
-        driver.find_element(*Locators.PASSWORD_INPUT_FIELD_ENTER).send_keys(password_generator)
+        driver.find_element(*Locators.PASSWORD_INPUT_FIELD).send_keys(password_generator)
 
         # войти в аккаунт кнопка
         driver.find_element(*Locators.ENTER_BUTTON).click()
@@ -71,7 +71,7 @@ class TestRegistration:
         driver.find_element(*Locators.EMAIL_INPUT_FIELD_REG).send_keys(email_generator)
 
         # поле ввода пароля
-        driver.find_element(*Locators.PASSWORD_INPUT_FIELD_REG).send_keys(short_password_generator)
+        driver.find_element(*Locators.PASSWORD_INPUT_FIELD).send_keys(short_password_generator)
 
         # кнопка зарегистрироваться
         driver.find_element(*Locators.REGISTRATION_BUTTON).click()

@@ -20,7 +20,7 @@ class TestLogOut:
         driver.find_element(*Locators.EMAIL_INPUT_FIELD_ENTER).send_keys(Constants.EMAIL)
 
         # поле ввода пароля
-        driver.find_element(*Locators.PASSWORD_INPUT_FIELD_ENTER).send_keys(Constants.PASSWORD)
+        driver.find_element(*Locators.PASSWORD_INPUT_FIELD).send_keys(Constants.PASSWORD)
 
         # войти в аккаунт кнопка
         driver.find_element(*Locators.ENTER_BUTTON).click()

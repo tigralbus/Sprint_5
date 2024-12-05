@@ -7,11 +7,11 @@ class Locators:
         By.XPATH,
         ".//section[@class = 'BurgerConstructor_basket__29Cd7 mt-25 ']/div/button[text() = 'Войти в аккаунт']")
     # Заголовок формы "Вход"
-    ENTER_FORM_HEADER = (By.XPATH, ".//h2[text() = 'Вход']")
+    ENTER_FORM_HEADER = (By.XPATH, ".//h2[text()='Вход']")
     # Поле ввода емейла формы Ввод
-    EMAIL_INPUT_FIELD_ENTER = (By.XPATH, ".//fieldset[1]/div/div/input")
+    EMAIL_INPUT_FIELD_ENTER = (By.XPATH, "*//input[@name = 'name']")
     # Поле ввода пароля формы Ввод
-    PASSWORD_INPUT_FIELD_ENTER = (By.XPATH, ".//fieldset[2]/div/div/input")
+    PASSWORD_INPUT_FIELD = (By.XPATH, ".//input[@name='Пароль']")
 
     # Кнопка регистрации
     REGISTRATION_BUTTON = (By.XPATH,
@@ -21,11 +21,9 @@ class Locators:
     # Ссылка на форму регистрации
     REGISTRATION_LINK = (By.XPATH, ".//div[@id='root']//a[@href='/register']")
     # Поле ввода имени формы Регистрация
-    NAME_INPUT_FIELD_REG = (By.XPATH, ".//fieldset[1]/div/div/input")
+    NAME_INPUT_FIELD_REG = (By.XPATH, ".//fieldset//label[text()='Имя']/../input")
     # Поле ввода емейла формы Регистрация
-    EMAIL_INPUT_FIELD_REG = (By.XPATH, ".//fieldset[2]/div/div/input")
-    # Поле ввода пароля формы Регистрация
-    PASSWORD_INPUT_FIELD_REG = (By.XPATH, ".//fieldset[3]/div/div/input")
+    EMAIL_INPUT_FIELD_REG = (By.XPATH, ".//fieldset//label[text()='Email']/../input")
     # Текст ошибки поля пароля
     PASSWORD_INPUT_FIELD_ERROR = (By.XPATH, ".//fieldset//p[@class = 'input__error text_type_main-default']")
 
